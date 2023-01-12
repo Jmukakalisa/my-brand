@@ -16,47 +16,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>  
 
-
   <body>
     <header>
-        <h1 class="logo"><span>J</span>eanne.</h1>
-        <ul id="sidemenu">
-          <li><a href="Index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="admin.html">Admin</a></li>
-          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-        </ul>
-        <a href="login.html" class="btn">Login</a>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      <h1 class="logo"><span>J</span>eanne.</h1>
+      <ul id="sidemenu">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+      </ul>
+
+      <a href="login.html" class="btn">Login</a>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     </header>
-    <div class="img" id="intro">   
-      <p>Hello, my name is</p>
-      <h1>Jeanne <span class="name">Mukakalisa</span></h1>
-      <h3>Data Analytics & Web Development</h3>
-      <button class="reach-out"><a href="contact.html">contact me</a></button>
-      <!-- <a href="#" class="reach-out">contact me</a> -->
 
+    <div id="comments">
+      <div class="container">
+        <div class="comment">
+          <form name="submit-to-google-sheet">
+              <!-- <input type="text" name="Name" placeholder="Your Name" required> -->
+              <input type="comment" name="comment" placeholder="Title" required>
+              <textarea name="Comment" rows="6" placeholder="Your comment"></textarea>
+              <button type="submit" class="btn-1 btn-3">Post</button>
+          </form>
+       </div>
+      </div>
+
+      <!------Contact Me------>
+      <div class="copyright">
+        <div class="contact-me">
+          <h1>Let Me Get You A Beautiful Website.</h1>
+          <a class="button-two" href="contact.html">Hire Me</a>
+          <p>Copyright reserved @Jeanne, 2022.</p>
+        </div>
+      </div>
     </div>
 
-    <div class="img" id="header"></div>
 
-    <!------Contact Me------>
-    <!-- <div class="contact-me"> -->
-      <!-- <p>For more HTML, CSS, and coding tutorial - please click on the link below to subscribe to my channel:</p> -->
-      <!-- <p>Let Me Get You A Beautiful Website.</p>
-      <a class="button-two" href="contact.html">Hire Me</a>
-    </div>
-    <footer>
-      <p class="end">Copyright reserved @Jeanne, 2022.</p>
-    </footer>
-   -->
     <script>
       var sidemenu = document.getElementById("sidemenu");
-
+  
       function openmenu(){
         sidemenu.style.right = "0";
       }
@@ -66,4 +69,3 @@
     </script> 
   </body>
 </html>
-  

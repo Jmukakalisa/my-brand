@@ -58,10 +58,10 @@ header a{
     background-color: transparent;
 	color: #fff;
 	border: 2px solid turquoise;
-	padding: 8px 25px;
+	padding: 2px 6px;
 	border-radius: 10px;
 	letter-spacing: 2px;
-	margin-bottom: 40px; 
+	margin-bottom: 38px; 
 }
 
 .btn:hover {
@@ -783,7 +783,24 @@ text-decoration: none;
 
 .blog-text a {
 	color: #f9004d;
+	margin-top: 10px;
 }
+
+.blog-text a i {
+	text-decoration: none;
+	font-size: 20px;
+	margin-right: 15px;
+	color:#ababab;
+	display: inline-block;
+	transition: transform 0.5s;
+	margin-top: -10px;
+	/* background: red; */
+}
+/* .blog-text a i.fa-solid.fa-comments{
+	color: blue;
+	margin-left: 40px;
+	margin-top: -70px;
+}  */
 
 .blog-text a:hover {
 	color: turquoise;
@@ -861,6 +878,26 @@ text-decoration: none;
 	color: turquoise;
 	transition: all ease 0.3s;
 }
+
+.blog-summ-text a i {
+	color: #ababab;
+}
+
+.comment input{
+	width: 50%;
+	margin-left: 20%;
+}
+
+.comment textarea{
+	width: 50%;
+	margin-left: 20%;
+}
+
+.comment button{
+	margin-left: 35%;
+}
+
+
 
 /*...............css for small screans..................*/
 header .fa-solid {
@@ -985,9 +1022,9 @@ header .fa-solid {
 		flex-basis: 100%;
 	} 
 
-	#reading .copyright {
-		/* margin-top: 60px; */
-	}
+	/* #reading .copyright {
+		margin-top: 60px;
+	} */
 
 	.login-col{
 		width: 100%;
@@ -1013,6 +1050,20 @@ header .fa-solid {
 
 	.blog-summ-box {
 		width: 50%;
+	}
+
+	.comment input{
+		width: 100%;
+		margin-left: 0;
+	}
+	
+	.comment textarea{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.comment button{
+		margin-left: 25%;
 	}
 
 	
