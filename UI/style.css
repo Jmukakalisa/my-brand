@@ -470,9 +470,9 @@ button:hover {
 
 /*........................portfolio section starts here.....................*/
 
-#portfolio {
-	/* padding: 30px 0; */
-}
+/* #portfolio {
+	padding: 30px 0;
+} */
 
 
 #portfolio h1 {
@@ -624,11 +624,15 @@ form input, form textarea {
 	outline: none;
 	background: #262626;
 	padding: 15px;
-	margin: 15px 0;
+	margin: 20px 0;
 	color: #fff;
 	font-size: 18px;
 	border-radius: 6px;
 }
+
+/* #froala {
+	margin-top:80px;
+} */
 
 form .btn-3 {
 	display: inline-block;
@@ -681,6 +685,36 @@ form .btn-3:hover{
 	text-decoration: underline;
 	color: #fcfc;
 	justify-content: space-between;
+}
+
+/* .signup-col-2 {
+	display: inline;
+} */
+
+.signup-col-3 .error{
+	color: #ff3860;
+	margin-top: 10px;
+}
+
+.signup-col-4 .error {
+	color:#ff3860;
+	margin-top: 10px;
+
+}
+
+.signup-col-2.success input {
+	border-color: #09c372;
+}
+
+.signup-col-2.error input {
+    border-color: #ff3860;
+}
+
+.signup-col-2 .error {
+    color: #ff3860;
+    font-size: 14px;
+    /* height: 13px; */
+	margin-bottom: 10px;
 }
 
 /* #body{
@@ -888,23 +922,27 @@ text-decoration: none;
 	color: #ababab;
 }
 
-.comment input{
-	width: 50%;
-	margin-left: 20%;
+.comment {
+	flex-basis: 60%;
 }
 
-.comment textarea{
-	width: 50%;
-	margin-left: 20%;
+.comment input{
+	width: 100%;
+	/* margin-left: 20%; */
+}
+
+.comment textarea {
+	width: 100%;
+	/* margin-left: 20%; */
 }
 
 .comment button{
-	margin-left: 35%;
+	/* margin-left: 35%; */
 }
 
 .comments {
 	/* background: #262626; */
-	margin-left: -33%;
+	margin-left: -44%;
 
 }
 
@@ -914,6 +952,8 @@ text-decoration: none;
 }
 
 .comments .description {
+	/* flex-basis: 40%; */
+	/* background: red; */
 	margin-top: 30px;
 	/* font-size: 22px;
 	font-family: 'Poppins', sans-serif; */
@@ -926,6 +966,8 @@ text-decoration: none;
 
 .comments form {
 	margin-top: 30px;
+	flex-basis: 60%;
+	width: 600px;
 }
 
 
@@ -1093,18 +1135,23 @@ header .fa-solid {
 	}
 
 	.comment input{
-		width: 100%;
+		width: 120%;
 		margin-left: 0;
+		align-items: center;
 	}
 	
 	.comment textarea{
-		width: 100%;
+		width: 120%;
 		margin-left: 0;
 	}
 
 	.comment button{
 		margin-left: 25%;
 	}
+
+	/* .comments .description {
+		background: red;
+	} */
 
 	
 }
@@ -1122,7 +1169,29 @@ header .fa-solid {
 		width: 100%;
 
 	}
+	.comments form {
+		width: 110%;
+		margin-left: -20px;
+	}
+
+	.comment {
+		flex-basis: 90%;
+	}
 	
+	.comment input{
+		width: 100%;
+		margin-left: 0;
+		align-items: center;
+	}
+	
+	.comment textarea{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.comment button{
+		margin-left: 25%;
+	}
 }
 
 	/* #signup, .copyright{
