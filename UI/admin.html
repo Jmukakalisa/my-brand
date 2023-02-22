@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Admin Panel</title>
-    <script defer src="./blogdisplay.js"></script>
+    
 </head>
 
 <body>
@@ -19,9 +19,8 @@
             <li><span>Dashboard</span> </li>
             <li><span>Blogs</span> </li>
             <li><a href="project.html"><span>Projects</span></a></li>
-            <li><span>Help</span></li>
-            <li><span>Settings</span> </li>
-            <li><a href="blog.html">Logout</a></li>
+            <li><span>Messages</span></li>
+            <li><a href="blog.html" id="loggout-btn">Logout</a></li>
         </ul>
     </div>
     <div class="container">
@@ -40,7 +39,7 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="content">
+        <div class="content">
             <div class="cards">
                 <div class="card">
                     <div class="box">
@@ -62,24 +61,24 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <h1>10</h1>
+                        <h1>3</h1>
                         <h3><a href="project.html">Projects</a></h3>
                     </div>
                     <div class="icon-case">
                         <img src="./img/schools.png" alt="">
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             
-            <!-- <div class="content-2">
+            <div class="content-2">
                 <div class="recent-blogs">
                     <div class="title">
                         <h2>Recent Blogs</h2>
                         <a href="blog.html" class="btn">View All</a>
                     </div>
-                    <table>
-                        <tr>
+                    <table id="blog-list">
+                        <!-- <tr>
                             <th>Blog Title</th>
                             <th>Date Updated</th>
                             <th>Option</th>
@@ -119,20 +118,20 @@
                             <td>December 17, 2022</td>
                             <td><a href="#" class="btn">Edit</a></td>
                             <td><a href="#" class="btn">Delete</a></td>
-                        </tr>
+                        </tr> -->
                     </table>
                 </div>
                 <div class="new-blogs">
                     <div class="title">
-                        <h2>New Blogs</h2>
+                        <h2>Messages</h2>
                         <a href="blog.html" class="btn">View All</a>
                     </div>
                     <table>
                         <tr>
-                            <th>Title</th>
+                            <th>User</th>
                             <th>option</th>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                             <td>Nano Technology</td>
                             <td><a href="#" class="btn">Delete</a></td>
                         </tr>
@@ -155,12 +154,14 @@
                         <tr>
                             <td>Nano Technology</td>
                             <td><a href="#" class="btn">Delete</a></td>
-                        </tr>
+                        </tr> -->
 
                     </table>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
+
+    <script defer src="./blog-list.js"></script>
 </body>
 </html>
