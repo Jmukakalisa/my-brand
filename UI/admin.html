@@ -1,137 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Admin Panel</title>
-    
-</head>
+    <style>
+      .btn-success {
+        background-color: green;
+        border: 1px solid green;
+      }
 
-<body>
+      .btn-success:hover {
+        color: green;
+        outline: none;
+        border: 1px solid green;
+      }
+    </style>
+  </head>
+
+  <body onload="isLoggedIn()">
     <div class="side-menu">
-        <!-- <div class="brand-name">
+      <!-- <div class="brand-name">
             <h1>Brand</h1>
         </div> -->
-        <ul>
-            <li><span>Dashboard</span> </li>
-            <li><span>Blogs</span> </li>
-            <li><a href="project.html"><span>Projects</span></a></li>
-            <li><span>Messages</span></li>
-            <li><a href="blog.html" id="loggout-btn">Logout</a></li>
-        </ul>
+      <ul>
+        <li><span>Dashboard</span></li>
+        <li><span>Blogs</span></li>
+        <li>
+          <a href="project.html"><span>Projects</span></a>
+        </li>
+        <li><span>Messages</span></li>
+        <li><a href="logout.html" id="loggout-btn">Logout</a></li>
+      </ul>
     </div>
     <div class="container">
-        <div class="header">
-            <div class="nav">
-                <div class="search">
-                    <input type="text" placeholder="Search..">
-                    <button type="submit"><img src="./img/search.png" alt=""></button>
-                </div>
-                <div class="user">
-                    <a href="add-blog.html" class="btn">Add New</a>
-                    <img src="./img/notifications.png" alt="">
-                    <div class="img-case">
-                        <img src="./img/user.png" alt="">
-                    </div>
-                </div>
+      <div class="header">
+        <div class="nav">
+          <div class="search">
+            <input type="text" placeholder="Search.." />
+            <button type="submit"><img src="./img/search.png" alt="" /></button>
+          </div>
+          <div class="user">
+            <a href="add-blog.html" class="btn">Add New</a>
+            <img src="./img/notifications.png" alt="" />
+            <div class="img-case">
+              <img src="./img/user.png" alt="" />
             </div>
+          </div>
         </div>
-        <div class="content">
-            <div class="cards">
-                <div class="card">
-                    <div class="box">
-                        <h1>100</h1>
-                        <h3>Subscribers</h3>
-                    </div>
-                    <div class="icon-case">
-                        <img src="./img/students.png" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <h1>6</h1>
-                        <h3><a href="blog.html">Blogs</a></h3>
-                    </div>
-                    <div class="icon-case">
-                        <img src="./img/teachers.png" alt="">
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <h1>3</h1>
-                        <h3><a href="project.html">Projects</a></h3>
-                    </div>
-                    <div class="icon-case">
-                        <img src="./img/schools.png" alt="">
-                    </div>
-                </div>
+      </div>
+      <div class="content">
+        <div class="cards">
+          <div class="card">
+            <div class="box">
+              <h1>100</h1>
+              <h3>Subscribers</h3>
             </div>
+            <div class="icon-case">
+              <img src="./img/students.png" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <h1 id="blogNumber">6</h1>
+              <h3><a href="blog.html">Blogs</a></h3>
+            </div>
+            <div class="icon-case">
+              <img src="./img/teachers.png" alt="" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="box">
+              <h1>3</h1>
+              <h3><a href="project.html">Projects</a></h3>
+            </div>
+            <div class="icon-case">
+              <img src="./img/schools.png" alt="" />
+            </div>
+          </div>
+        </div>
 
-            
-            <div class="content-2">
-                <div class="recent-blogs">
-                    <div class="title">
-                        <h2>Recent Blogs</h2>
-                        <a href="blog.html" class="btn">View All</a>
-                    </div>
-                    <table id="blog-list">
-                        <!-- <tr>
-                            <th>Blog Title</th>
-                            <th>Date Updated</th>
-                            <th>Option</th>
-                        </tr>
-                        <tr>
-                            <td>Nano Technology</td>
-                            <td>December 17, 2022</td>
-                            <td><a href="#" class="btn">Edit</a></td>
-                            <td><a href="#" class="btn">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>Nano Technology</td>
-                            <td>December 17, 2022</td>
-                            <td><a href="#" class="btn">Edit</a></td>
-                            <td><a href="#" class="btn">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>Nano Technology</td>
-                            <td>December 17, 2022</td>
-                            <td><a href="#" class="btn">Edit</a></td>
-                            <td><a href="#" class="btn">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>Nano Technology</td>
-                            <td>December 17, 2022</td>
-                            <td><a href="#" class="btn">Edit</a></td>
-                            <td><a href="#" class="btn">Delete</a></td>
-                        </tr>
-                        <tr>
-                            <td>Nano Technology</td>
-                            <td>December 17, 2022</td>
-                            <td><a href="#" class="btn">Edit</a></td>
-                            <td><a href="#" class="btn">Delete</a></td>
-                        </tr>
+        <div class="content-2">
+          <div class="recent-blogs">
+            <div class="title">
+              <h2>Recent Blogs</h2>
+              <a href="blog.html" class="btn">View All</a>
+            </div>
+            <table id="blog-list">
+              <tr>
+                <th>Blog Title</th>
+                <th>Date Updated</th>
+                <th>Contents</th>
+                <th>Option</th>
+              </tr>
+              <!--
                         <tr>
                             <td>Nano Technology</td>
                             <td>December 17, 2022</td>
                             <td><a href="#" class="btn">Edit</a></td>
                             <td><a href="#" class="btn">Delete</a></td>
                         </tr> -->
-                    </table>
-                </div>
-                <div class="new-blogs">
-                    <div class="title">
-                        <h2>Messages</h2>
-                        <a href="blog.html" class="btn">View All</a>
-                    </div>
-                    <table>
-                        <tr>
-                            <th>User</th>
-                            <th>option</th>
-                        </tr>
-                        <!-- <tr>
+            </table>
+          </div>
+          <div class="new-blogs">
+            <div class="title">
+              <h2>Messages</h2>
+              <a href="blog.html" class="btn">View All</a>
+            </div>
+            <table id="message-list">
+              <tr>
+                <th>User</th>
+                <th>email</th>
+                <th>Message</th>
+                <!-- <th>Option</th> -->
+              </tr>
+              <!-- <tr>
                             <td>Nano Technology</td>
                             <td><a href="#" class="btn">Delete</a></td>
                         </tr>
@@ -155,13 +140,20 @@
                             <td>Nano Technology</td>
                             <td><a href="#" class="btn">Delete</a></td>
                         </tr> -->
-
-                    </table>
-                </div>
-            </div>
+            </table>
+          </div>
         </div>
+      </div>
     </div>
-
-    <script defer src="./blog-list.js"></script>
-</body>
+    <script>
+      function isLoggedIn() {
+        if (localStorage.getItem("isloggedIn")) {
+          return;
+        } else {
+          window.location.href = "login.html";
+        }
+      }
+    </script>
+    <script defer src="./js/blog-list.js"></script>
+  </body>
 </html>

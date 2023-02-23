@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jeanne Mukakalisa| Data Analytics | Student</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/033437e698.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>  
-
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./img/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/033437e698.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
   <body>
     <header>
@@ -31,7 +57,7 @@
         <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
       </ul>
 
-      <a href="login.html" class="btn">Login</a>
+      <a href="login.html" class="btn" id="loginBtn">Login</a>
       <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     </header>
 
@@ -39,91 +65,125 @@
       <div class="container">
         <div class="row">
           <div class="about-right">
-            <img src="./img/about.jpg" id="about-desk">
-            <img src="./img/home1.png" id="about-resp">
-          </div>  
+            <img src="./img/about.jpg" id="about-desk" />
+            <img src="./img/home1.png" id="about-resp" />
+          </div>
           <div class="about-txt">
             <h2 class="sub-titles">About Me</h2>
             <h5>Data Analyst <span>& Developer</span></h5>
-            <p>I am a data analytics and a full-stack web developer in the making.
-            completed Google Data Analytics course and Microsoft Learn #Data Science Challenge 
-            On top of that I am also a part of Andela Technical Leadership Program. 
-            Outside of tech world, I'm dedicated to community services member of Rotaract Club of ALU. #ServiceAboveSelf!</p>
+            <p>
+              I am a data analytics and a full-stack web developer in the
+              making. completed Google Data Analytics course and Microsoft Learn
+              #Data Science Challenge On top of that I am also a part of Andela
+              Technical Leadership Program. Outside of tech world, I'm dedicated
+              to community services member of Rotaract Club of ALU.
+              #ServiceAboveSelf!
+            </p>
 
             <div class="table-titles">
-              <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links active-link" onclick="opentab('experience')">
+                Experience
+              </p>
               <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
             <div class="tab-contents active-tab" id="experience">
               <ul>
-                <li><span>2022 - Current</span><br>ATLP Software Developer Trainee </li>
-                <li><span>Jully - Aug 2022</span><br>Youth care professional of SOS ESAF</li>
-                <li><span>June - Oct 2021</span><br>AFSD Fellowship in regards to SDGs</li>
+                <li>
+                  <span>2022 - Current</span><br />ATLP Software Developer
+                  Trainee
+                </li>
+                <li>
+                  <span>Jully - Aug 2022</span><br />Youth care professional of
+                  SOS ESAF
+                </li>
+                <li>
+                  <span>June - Oct 2021</span><br />AFSD Fellowship in regards
+                  to SDGs
+                </li>
               </ul>
             </div>
             <div class="tab-contents" id="education">
               <ul>
-                <li><span>2020 - Current</span><br>BSc at African Leadership University</li>
-                <li><span>2020</span><br>Diploma from UTB </li>
-                <li><span>2015</span><br>A2 from Sumba Secondary School</li>
+                <li>
+                  <span>2020 - Current</span><br />BSc at African Leadership
+                  University
+                </li>
+                <li><span>2020</span><br />Diploma from UTB</li>
+                <li><span>2015</span><br />A2 from Sumba Secondary School</li>
               </ul>
             </div>
             <button type="button"><a href="contact.html">Let's Talk</a></button>
           </div>
         </div>
-      </div>  
-    </div>
-  
-	<!-----service section start----------->
-	<div id="services">
-		<div class="container">
-			<h2 class="sub-titles">My Services</h2>
-      <div class="services-list">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h2>Web Dev & Design</h2>
-          <p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. 
-          Secondly, it needs to be fast as possible.</p>
-          <a class="button" href="#">Lead More</a>
-        </div>
-        <div>
-          <i class="fa-brands fa-app-store"></i>
-          <h2>App Design</h2>
-          <p>Every App should be built with two primary goals: Firstly, it needs to work across all devices. 
-          Secondly, it needs to be fast as possible.</p>
-          <a class="button" href="#">Learn More</a>
-        </div>
-        <div>
-          <i class="fa-solid fa-database"></i>
-          <h2>Data Analytics</h2>
-          <p>Collecting data. Recording data. Analysing data to draw conclusions. 
-          Sharing data in a way which is useful to others.</p>
-          <a class="button" href="#">Lead More</a>
-        </div>
       </div>
-		</div>
-  </div>
+    </div>
 
-  <div id="reading">
-    <div class="container">
-      <div class="books">
-        <h3>Currently <span>Reading</span></h3>
-        <img src="https://i2.wp.com/www.samuelthomasdavies.com/wp-content/uploads/2021/01/Atomic-Habits-Summary.jpeg?fit=229%2C346&ssl=1">
-        <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781501151132/lifes-work-9781501151132_lg.jpg">
-        <img src="https://nuriakenya.com/wp-content/uploads/2022/06/Screenshot_20220614-172203_Acrobat-for-Samsung-400x583.jpg">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeOmb5ykZwQylyGuKtKRq_lbV3vJw-Rf-eGUOzOUYvL1mY4S5n9qHVcQpFYd3kFSyMnk&usqp=CAU">
+    <!-----service section start----------->
+    <div id="services">
+      <div class="container">
+        <h2 class="sub-titles">My Services</h2>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Dev & Design</h2>
+            <p>
+              Every website should be built with two primary goals: Firstly, it
+              needs to work across all devices. Secondly, it needs to be fast as
+              possible.
+            </p>
+            <a class="button" href="#">Lead More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Every App should be built with two primary goals: Firstly, it
+              needs to work across all devices. Secondly, it needs to be fast as
+              possible.
+            </p>
+            <a class="button" href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Data Analytics</h2>
+            <p>
+              Collecting data. Recording data. Analysing data to draw
+              conclusions. Sharing data in a way which is useful to others.
+            </p>
+            <a class="button" href="#">Lead More</a>
+          </div>
+        </div>
       </div>
     </div>
-    <!------Contact Me------>
-    <div class="copyright">
-      <div class="contact-me">
-        <h1>Let Me Get You A Beautiful Website.</h1>
-        <a class="button-two" href="contact.html">Hire Me</a>
-        <p>Copyright reserved @Jeanne, 2022.</p>
+
+    <div id="reading">
+      <div class="container">
+        <div class="books">
+          <h3>Currently <span>Reading</span></h3>
+          <img
+            src="https://i2.wp.com/www.samuelthomasdavies.com/wp-content/uploads/2021/01/Atomic-Habits-Summary.jpeg?fit=229%2C346&ssl=1"
+          />
+          <img
+            src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781501151132/lifes-work-9781501151132_lg.jpg"
+          />
+          <img
+            src="https://nuriakenya.com/wp-content/uploads/2022/06/Screenshot_20220614-172203_Acrobat-for-Samsung-400x583.jpg"
+          />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAeOmb5ykZwQylyGuKtKRq_lbV3vJw-Rf-eGUOzOUYvL1mY4S5n9qHVcQpFYd3kFSyMnk&usqp=CAU"
+          />
+        </div>
+      </div>
+      <!------Contact Me------>
+      <div class="copyright">
+        <div class="contact-me">
+          <h1>Let Me Get You A Beautiful Website.</h1>
+          <a class="button-two" href="contact.html">Hire Me</a>
+          <p>Copyright reserved @Jeanne, 2022.</p>
+        </div>
       </div>
     </div>
-  </div>
-    
+
     <!-- <div class="hobbies">
       <h1>Hobb<span>ies</span></h1>
       <img src="./img/travel.jpg">
@@ -134,29 +194,35 @@
 
     <script>
       var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents")
-      function opentab(tabname){
-        for (tablink of tablinks){
-          tablink.classList.remove( "active-link");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for (tabcontent of tabcontents){
-          tabcontent.classList.remove( "active-tab");            
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab")
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
       }
-    </script> 
+    </script>
 
     <script>
       var sidemenu = document.getElementById("sidemenu");
 
-      function openmenu(){
+      function openmenu() {
         sidemenu.style.right = "0";
       }
-      function closemenu(){
-        sidemenu.style.right = "-200px"
+      function closemenu() {
+        sidemenu.style.right = "-200px";
       }
-    </script> 
-
+      document.addEventListener("DOMContentLoaded", function () {
+        if (localStorage.getItem("isloggedIn")) {
+          let loginBtn = document.querySelector("#loginBtn");
+          loginBtn.innerHTML = "Logout";
+          loginBtn.href = "logout.html";
+        }
+      });
+    </script>
   </body>
 </html>

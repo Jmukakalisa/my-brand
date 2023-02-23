@@ -1,162 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Jeanne Mukakalisa| Data Analytics | Student</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="node_modules/froala-editor/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"></script>
-    <script defer src="./comment.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./img/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      href="node_modules/froala-editor/css/froala_editor.pkgd.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"
+    ></script>
     <!-- <script src="./commentStorage.js"></script> -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/033437e698.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  </head>  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/033437e698.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body id="blogpost">
-    
+  <body id="blogpost">
     <header>
-        <h1 class="logo"><span>J</span>eanne.</h1>
-        <ul id="sidemenu">
-          <li><a href="Index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <!-- <li><a href="admin.html">Admin</a></li> -->
-          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-        </ul>
-  
-        <a href="login.html" class="btn">Login</a>
-        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      <h1 class="logo"><span>J</span>eanne.</h1>
+      <ul id="sidemenu">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <!-- <li><a href="admin.html">Admin</a></li> -->
+        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+      </ul>
+
+      <a href="login.html" class="btn" id="loginBtn">Login</a>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     </header>
 
-      <section id="blog">
-        <div class="heading">
-            <span>Recent Blogs</span>
-            <h1>My Blog</h1>
-        </div>
+    <section id="blog">
+      <div class="heading">
+        <span>Recent Blogs</span>
+        <h1>My Blog</h1>
+      </div>
+      <div id="view"></div>
+    </section>
 
-        <div class="blog-summ-container" id="blog-list">
-            <div class="blog-summ-box">
-                <div class="blog-summ-img">
-                    <img src="./img/blog-4.png">                    
-                </div>
+    <!------Contact Me------>
+    <div class="copyright">
+      <div class="contact-me">
+        <h1>Let Me Get You A Beautiful Website.</h1>
+        <a class="button-two" href="contact.html">Hire Me</a>
+        <p>Copyright reserved @Jeanne, 2022.</p>
+      </div>
+    </div>
+    <script>
+      const fetchSingleBlog = async () => {
+        let id = window.location?.search.slice(4);
+        try {
+          const blogs = await fetch(
+            `https://jmukakalisa.onrender.com/api/blogs/${id}`,
+            {
+              method: "GET",
+              headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+              },
+            }
+          );
+          let blogsData = await blogs.json();
 
-                <div class="blog-summ-text">
-                    <span>June 18, 2022/ Nano Technology</span>
-                    <a href="" class="blog-title">What has Happened Of All The Ideas In Technology Industry</a>
-                    <p>Nanotechnology is the term given to those areas of science and engineering where phenomena that take place at dimensions in <br> the nanometre scale are utilized in the design, characterisation, production and application of materials, structures, devices and systems
-                    There are different opinions around nanotechnology where scientists and engineers believe nanotechnology can be used to benefit human health now and in the future through applications such as better filters for improving water purification, more effective methods of delivering drugs in medicine and new ways of repairing damaged tissues and organs. <br>                   
-                    However, Improved control over materials does not just mean better products. As with any new technology, there are concerns about unknown effects and perhaps some extra ones, simply because nanotechnologies are so incredibly small.
-                    This is not just because they seem insidious due to their invisibility. The properties of materials are influenced by different effects at very small scales, where quantum mechanical laws trump classical physics. And biological systems, in particular, may respond to nanomaterials in ways we do not like.
-                    Many areas in which nanotechnology can be applied and be beneficial has been identified, such as:
-                    Future Transportation Benefits
-                    Environmental Remediation
-                    Energy Applications
-                    Medical and Healthcare Applications 
-                    Electronics and IT Applications
-                    Everyday Materials and Processes
-                    Nanotechnology will help improve in different areas as mentioned above, Although it has some pros and cons. Some of the pros are: <br> It offers the potential for new and faster kinds of computers, more efficient power sources and life-saving medical treatments, there are Invisible particles that fight cancer cells, <br> faster microprocessors that consume less energy, batteries that last 10 times longer or solar panels that yield twice as much energy. But the disadvantage of it is that those Nanoparticles can get into the body through the skin, lungs and digestive system. This may help create 'free radicals' which can cause cell damage and damage to the DNA.
-                    To sum up, In the future, nanotechnology might help us make electrical lines, solar cells, and biofuels more efficient, <br> and make nuclear reactors safer. Nanotechnology might lead to huge advances in health care, improving methods for detecting and treating diseases like cancer.   
-                    While there are many nanotech uses, three areas of nanotech are paving the way to our future: Materials Science, Nanomedicine and Device Engineering.</p>
-                    <!-- <a href="#"><i class="fa-solid fa-heart"></i></a> -->
-                    <a href="#"><i class="fa-solid fa-comments"></i></a>
-                    
-                </div>
-                
+          let { image, title, content, createdAt } = blogsData.data;
+          let blogHtml = `  <div class="blog-summ-container" id="blog-list">
+          <div class="blog-summ-box">
+            <div class="blog-summ-img">
+              <img src="${image}" />
             </div>
 
-            <div class="comments">
-                <div class="container">
-                    <!-- <div class="row"> -->
-                        <div class="comment-title">
-                            <h1>Comments</h1>
-                        </div>
-                        <div class="description">
-                            <h3>Jane Doe <span>Dcember 17, 2022</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            <br>Praesentium minus odit quam magnam et amet laborum autem, dolorem quod vel, <br>
-                            mollitia sapiente, consequuntur laudantium repellendus cum? Quaerat maxime corporis quo.</p>
-                            <a href="#">Like |</a>
-                            <a href="#">Reply</a>
-                        </div>
-                        <div class="description">
-                            <h3>Jane Doe <span>Dcember 17, 2022</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            <br>Praesentium minus odit quam magnam et amet laborum autem, dolorem quod vel, <br>
-                            mollitia sapiente, consequuntur laudantium repellendus cum? Quaerat maxime corporis quo.</p>
-                            <a href="#">Like |</a>
-                            <a href="#">Reply</a>
-                        </div>
-
-                        <form id="form" action="/">
-                            <div class="signup-col-4">
-                                <textarea id="froala" name="Comment" rows="6" placeholder="Your comment" ></textarea>
-                                <script> var editor = new FroalaEditor('#froala');
-                                </script>
-                                <div class="error"></div>
-                            </div>
-                            <button id="submit" type="submit" class="btn-1 btn-3">Post</button>
-                        </form>
-                    <!-- </div> -->
-                </div>
+            <div class="blog-summ-text">
+              <span>${createdAt}</span>
+              <a href="" class="blog-title"
+                >${title}</a
+              >
+              <p>
+              ${content}
+              </p>
+              <!-- <a href="#"><i class="fa-solid fa-heart"></i></a> -->
+              <a href="#"><i class="fa-solid fa-comments"></i></a>
             </div>
-        </div>
-      </section>
+          </div>
 
-        <!------Contact Me------>
-        <div class="copyright">
-        <div class="contact-me">
-            <h1>Let Me Get You A Beautiful Website.</h1>
-            <a class="button-two" href="contact.html">Hire Me</a>
-            <p>Copyright reserved @Jeanne, 2022.</p>
-        </div>
-        </div>
+          <div class="comments">
+            <div class="container" >
+              <!-- <div class="row"> -->
+              <div class="comment-title">
+                <h1>Comments</h1>
+              </div>
+              <div id='comment-container'>
+                </div>
 
-        <script>
-            var sidemenu = document.getElementById("sidemenu");
-        
-            function openmenu(){
-              sidemenu.style.right = "0";
+
+
+              <form id="form" action="/">
+                <div class="signup-col-4">
+                  <textarea
+                    id="froala"
+                    name="Comment"
+                    rows="6"
+                    placeholder="Your comment"
+                  ></textarea>
+
+                  <div class="error"></div>
+                </div>
+                <button id="addComment" type="submit" class="btn-1 btn-3">
+                  Post
+                </button>
+              </form>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      `;
+          let parser = new DOMParser();
+          let doc = parser
+            .parseFromString(blogHtml, "text/html")
+            .querySelector(`#blog-list`);
+          document.querySelector("#view").appendChild(doc);
+          let comments = await fetchBlogComments(id);
+          console.log(comments);
+          if (comments.length > 0) {
+            var editor = new FroalaEditor("#froala");
+            comments.forEach((com) => {
+              let c = ` <div class="description">
+                      <h3>${com.user?.username} <span>${com.createdAt}</span></h3>
+                      <p>
+                       ${com.comment}
+                      </p>
+                      <a href="#">Like |</a>
+                      <a href="#">Reply</a>
+                    </div>`;
+              let doc = parser
+                .parseFromString(c, "text/html")
+                .querySelector(`.description`);
+              document.querySelector("#comment-container").appendChild(doc);
+            });
+          } else {
+            document.querySelector("#comment-container").innerHTML =
+              "No comments";
+          }
+        } catch (error) {
+          console.log(error);
+          return;
+        }
+      };
+
+      document.addEventListener("DOMContentLoaded", function () {
+        if (localStorage.getItem("isloggedIn")) {
+          let loginBtn = document.querySelector("#loginBtn");
+          loginBtn.innerHTML = "Logout";
+          loginBtn.href = "logout.html";
+        }
+        fetchSingleBlog();
+      });
+
+      document.querySelector("#view").addEventListener("click", function (e) {
+        let { id, value } = e.target;
+        if (id == "addComment") {
+          e.preventDefault();
+          validateInputs();
+          const froalaValue = froala.value.trim();
+
+          addComment({ comment: froalaValue });
+        }
+      });
+
+      var sidemenu = document.getElementById("sidemenu");
+      const addComment = async (comment) => {
+        const token = JSON.parse(localStorage.getItem("isloggedIn"))?.token;
+        let id = window.location?.search.slice(4);
+        if (!token) {
+          setError(froala, "You should be logged in to comment");
+          return;
+        }
+        try {
+          const blogs = await fetch(
+            `https://jmukakalisa.onrender.com/api/blogs/${id}/comments`,
+            {
+              method: "POST",
+              headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${token}`,
+              },
+              body: JSON.stringify(comment),
             }
-            function closemenu(){
-              sidemenu.style.right = "-200px"
+          );
+          let comments = await blogs.json();
+          alert(comments.message);
+          window.location = "";
+        } catch (error) {
+          console.log(error);
+          return;
+        }
+      };
+      const fetchBlogComments = async (id) => {
+        try {
+          const blogs = await fetch(
+            `https://jmukakalisa.onrender.com/api/blogs/${id}/comments`,
+            {
+              method: "GET",
+              headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+              },
             }
-        </script> 
+          );
+          let comments = await blogs.json();
+          return comments.data;
+        } catch (error) {
+          console.log(error);
+          return;
+        }
+      };
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+      const setError = (element, message) => {
+        const signupColumn = element.parentElement;
+        const errorDisplay = signupColumn.querySelector(".error");
 
-        <script>
-           
-            // //  Get all value
+        errorDisplay.innerText = message;
+        signupColumn.classList.add("error");
+        signupColumn.classList.remove("success");
+      };
 
-            // let submit = document.getElementById('submit');
-            // let form = document.getElementById('form');
+      const setSuccess = (element) => {
+        const signupColumn = element.parentElement;
+        const errorDisplay = signupColumn.querySelector(".error");
 
-            // // form Refresh state
+        errorDisplay.innerText = "";
+        signupColumn.classList.add("success");
+        signupColumn.classList.remove("error");
+      };
+      const validateInputs = () => {
+        const froalaValue = froala.value.trim();
+        // const blodesValue = blodes.value.trim();
+        // const messValue = mess.value.trim();
 
-            // form.addEventListener('submit', (e) => {
-            //     e.preventDefault();
-            // });
+        if (froalaValue === "") {
+          setError(froala, "Please fill out this field");
+        } else {
+          setSuccess(froala);
+        }
 
-            // // start submit button
+        if (froalaValue === "") {
+          setError(froala, "Please fill this field");
+        } else if (froalaValue.length < 20) {
+          setError(froala, "Comment must be at least 20 characters");
+        } else {
+          setSuccess(froala);
+        }
+      };
+    </script>
+    <script>
+      // //  Get all value
 
-            // submit.addEventListener('click', (e) => {
-            //     let froala = document.getElementById('froala');
+      // let submit = document.getElementById('submit');
+      // let form = document.getElementById('form');
 
-            //     froala = froala.value;
-            //     localStorage.setItem('comment', froala);
-            //     localStorage.getItem('message');
-            // });
+      // // form Refresh state
 
-        </script>
+      // form.addEventListener('submit', (e) => {
+      //     e.preventDefault();
+      // });
 
-    </body>
+      // // start submit button
+
+      // submit.addEventListener('click', (e) => {
+      //     let froala = document.getElementById('froala');
+
+      //     froala = froala.value;
+      //     localStorage.setItem('comment', froala);
+      //     localStorage.getItem('message');
+      // });
+    </script>
+  </body>
 </html>
